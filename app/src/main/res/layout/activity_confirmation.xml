@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.barcodeapp.ConfirmationActivity">
+
+    <ImageView
+        android:id="@+id/iv_qrcode"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="20dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorAccent"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:layout_weight="1"
+        android:textSize="18sp"
+        />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:layout_weight="1"
+            android:textColor="@color/QRCodeBlackColor"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            android:layout_weight="1"
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:layout_weight="1"
+            android:textColor="@color/QRCodeBlackColor"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="DOB: "
+            android:layout_weight="1"
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="dob"
+            android:layout_weight="1"
+            android:textColor="@color/QRCodeBlackColor"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Mobile: "
+            android:layout_weight="1"
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0000 0000 00"
+            android:layout_weight="1"
+            android:textColor="@color/QRCodeBlackColor"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/success"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/success"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submission Successful"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/QRCodeBlackColor"
+        />
+
+    <TextView
+        android:id="@+id/submit_subheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thank you, Generated QR code saved in gallary"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:padding="4dp"
+        />
+
+
+</LinearLayout>
